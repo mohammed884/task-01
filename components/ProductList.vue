@@ -31,7 +31,7 @@ const { product } = defineProps<{ product: IProduct }>();
     </div>
     <div class="flex justify-between mt-3">
       <div>
-        <span class="text-sm font-bold text-red-400">{{
+        <span class="text-sm font-bold text-red-400 line-through">{{
           Intl.NumberFormat("ja-JP", {
             style: "currency",
             maximumSignificantDigits: 3,
