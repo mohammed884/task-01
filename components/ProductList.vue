@@ -6,7 +6,13 @@ const { product } = defineProps<{ product: IProduct }>();
   <li
     class="w-[300px] border-2 p-4 flex flex-col justify-between mx-auto rounded-md"
   >
-    <NuxtImg class="mx-auto" width="200" height="250" :src="product.image" />
+    <NuxtImg
+      :alt="'image ' + product.title.EN"
+      :src="product.image"
+      class="mx-auto"
+      width="200"
+      height="250"
+    />
     <p class="mt-3">
       {{
         product.title.EN.length > 50
